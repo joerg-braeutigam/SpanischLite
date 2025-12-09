@@ -7,7 +7,7 @@ export function UpdateBanner() {
     needRefresh: [needRefresh],
     updateServiceWorker,
   } = useRegisterSW({
-    onRegisteredSW(swUrl, r) {
+    onRegisteredSW(_, r) {
       // Check for updates every hour
       r &&
         setInterval(() => {
