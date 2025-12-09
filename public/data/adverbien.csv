@@ -1,0 +1,101 @@
+Rang,Spanisch,Deutsch,Kategorie
+1,no,"nein, nicht",Verneinung
+2,ya,"schon, bereits",Zeit
+3,más,mehr,Menge
+4,muy,sehr,Menge
+5,así,"so, auf diese Weise",Art und Weise
+6,también,auch,Bestätigung
+7,donde,wo,Ort
+8,siempre,immer,Zeit
+9,ahora,jetzt,Zeit
+10,luego,"dann, später",Zeit
+11,sólo / solo,nur,Einschränkung
+12,bien,gut,Art und Weise
+13,casi,fast,Menge
+14,nunca,nie,Zeit/Verneinung
+15,entonces,"dann, damals",Zeit
+16,además,außerdem,Ergänzung
+17,todavía,"noch, immer noch",Zeit
+18,mal,schlecht,Art und Weise
+19,tal vez,vielleicht,Zweifel
+20,aún,"noch, sogar",Zeit
+21,quizás,vielleicht,Zweifel
+22,ayer,gestern,Zeit
+23,hoy,heute,Zeit
+24,mañana,morgen,Zeit
+25,antes,"vorher, zuvor",Zeit
+26,después,"danach, später",Zeit
+27,tan,"so, derart",Menge
+28,poco,wenig,Menge
+29,demasiado,zu viel,Menge
+30,mucho,viel,Menge
+31,apenas,"kaum, gerade mal",Menge
+32,acá,hierher (LatAm),Ort
+33,allí,dort,Ort
+34,aquí,hier,Ort
+35,cerca,nah,Ort
+36,lejos,"fern, weit",Ort
+37,encima,"oben, darauf",Ort
+38,debajo,"unten, darunter",Ort
+39,fuera,draußen,Ort
+40,dentro,drinnen,Ort
+41,adelante,vorwärts,Ort
+42,atrás,"zurück, hinten",Ort
+43,lentamente,langsam (Art u. Weise),Art und Weise
+44,rápidamente,schnell (Art u. Weise),Art und Weise
+45,finalmente,schließlich,Art und Weise
+46,realmente,wirklich,Art und Weise
+47,probablemente,wahrscheinlich,Zweifel
+48,seguramente,sicherlich,Bestätigung
+49,simplemente,einfach,Art und Weise
+50,totalmente,"völlig, total",Art und Weise
+51,especialmente,besonders,Art und Weise
+52,claramente,"klar, deutlich",Art und Weise
+53,exactamente,genau,Art und Weise
+54,directamente,direkt,Art und Weise
+55,generalmente,im Allgemeinen,Art und Weise
+56,normalmente,normalerweise,Art und Weise
+57,fácilmente,leicht,Art und Weise
+58,difícilmente,"schwer, kaum",Art und Weise
+59,obviamente,offensichtlich,Art und Weise
+60,posiblemente,möglicherweise,Zweifel
+61,sinceramente,ehrlich,Art und Weise
+62,solamente,nur,Einschränkung
+63,brevemente,kurz,Art und Weise
+64,perfectamente,perfekt,Art und Weise
+65,felizmente,glücklich,Art und Weise
+66,completamente,vollständig,Art und Weise
+67,ciertamente,sicherlich,Bestätigung
+68,gravemente,schwerwiegend,Art und Weise
+69,profundamente,tiefgründig,Art und Weise
+70,activamente,aktiv,Art und Weise
+71,casi,fast,Menge
+72,igualmente,ebenfalls,Art und Weise
+73,únicamente,einzig und allein,Einschränkung
+74,solamente,nur,Einschränkung
+75,bastante,"ziemlich, genug",Menge
+76,justo,"genau, gerade",Zeit/Art u. Weise
+77,incluso,sogar,Steigerung
+78,luego,dann,Zeit
+79,jamás,niemals,Verneinung
+80,temprano,früh,Zeit
+81,tarde,spät,Zeit
+82,anoche,letzte Nacht,Zeit
+83,enseguida,sofort,Zeit
+84,pronto,bald,Zeit
+85,despacio,langsam,Art und Weise
+86,en serio,ernsthaft,Art und Weise
+87,en voz alta,laut (mit lauter Stimme),Art und Weise
+88,a menudo,oft,Häufigkeit
+89,a veces,manchmal,Häufigkeit
+90,nunca,nie,Verneinung
+91,detrás,dahinter,Ort
+92,abajo,unten,Ort
+93,arriba,oben,Ort
+94,fuera,draußen,Ort
+95,dentro,drinnen,Ort
+96,quizás,vielleicht,Zweifel
+97,tampoco,auch nicht,Verneinung
+98,sí,ja,Bestätigung
+99,sino,sondern,Konjunktion (Adverb-ähnlich)
+100,inmediatamente,"sofort, unverzüglich",Zeit
