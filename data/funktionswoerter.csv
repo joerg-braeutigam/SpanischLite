@@ -1,0 +1,51 @@
+Rang,Spanisch,Deutsch,Wortart
+1,de,"von, aus",Präposition
+2,la,"die (Singular, weiblich)",Artikel
+3,que,"dass, was, der/die/das",Konjunktion / Pronomen
+4,el,"der (Singular, männlich)",Artikel
+5,en,"in, an, auf",Präposition
+6,y,und,Konjunktion
+7,a,"zu, nach, an",Präposition
+8,los,"die (Plural, männlich)",Artikel
+9,se,sich (Reflexiv),Pronomen
+10,no,"nein, nicht",Adverb
+11,del (de + el),"des, vom",Präposition + Artikel
+12,las,"die (Plural, weiblich)",Artikel
+13,por,"wegen, durch, für",Präposition
+14,un,ein (männlich),Artikel
+15,para,"für, um zu",Präposition
+16,con,mit,Präposition
+17,una,eine (weiblich),Artikel
+18,su,"sein, ihr (Besitz)",Possessivpronomen
+19,al (a + el),"zum, am",Präposition + Artikel
+20,lo,"es, ihn, das",Pronomen / Artikel (neutral)
+21,como,"wie, als",Adverb / Konjunktion
+22,más,mehr,Adverb
+23,pero,aber,Konjunktion
+24,sus,"seine, ihre (Plural)",Possessivpronomen
+25,le,"ihm, ihr, Ihnen",Pronomen (indirekt)
+26,ya,"schon, bereits",Adverb
+27,o,oder,Konjunktion
+28,este,dieser (hier),Demonstrativpronomen
+29,sí,ja,Adverb
+30,porque,weil,Konjunktion
+31,muy,sehr,Adverb
+32,sin,ohne,Präposition
+33,sobre,"über, auf",Präposition
+34,también,auch,Adverb
+35,me,"mir, mich",Pronomen
+36,hasta,bis,Präposition
+37,hay (von haber),es gibt,Verb (unpersönlich)
+38,donde,wo,Adverb
+39,quien,wer,Pronomen
+40,desde,"seit, von ... her",Präposition
+41,todo,"alles, ganz",Adjektiv / Pronomen
+42,nos,uns,Pronomen
+43,durante,während,Präposition
+44,todos,alle,Adjektiv / Pronomen
+45,uno,"eins, einer, man",Zahlwort / Pronomen
+46,les,"ihnen, Ihnen (Plural)",Pronomen (indirekt)
+47,ni,"weder, noch, nicht einmal",Konjunktion
+48,contra,gegen,Präposition
+49,ese,"der da, dieser",Demonstrativpronomen
+50,eso,das (da),Demonstrativpronomen

@@ -1,0 +1,310 @@
+.grammar-drill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.drill-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.drill-type {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.drill-type.ser-estar {
+  background: #ffe5e5;
+  color: #d70015;
+}
+
+.drill-type.saber-conocer {
+  background: #e5f1ff;
+  color: #0066dd;
+}
+
+.drill-type.pronoun {
+  background: #f0e5ff;
+  color: #7c3aed;
+}
+
+.drill-type.gender {
+  background: #e5ffe8;
+  color: #248a3d;
+}
+
+.drill-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 16px 0 0;
+}
+
+.sentence-box {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.drill-sentence {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1c1c1e;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.gender-info {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.gender-tag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: #f2f2f7;
+  border-radius: 100px;
+  color: #636366;
+}
+
+.adjective-info {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #636366;
+  font-size: 16px;
+}
+
+.adjective-info strong {
+  color: #1c1c1e;
+}
+
+/* Choice Buttons */
+.choice-buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.choice-buttons.pronoun-choices {
+  flex-wrap: wrap;
+}
+
+.choice-buttons.pronoun-choices .choice-btn {
+  flex: 1 1 calc(50% - 8px);
+  min-width: 80px;
+}
+
+.choice-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 16px;
+  border: 2px solid #e5e5ea;
+  border-radius: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.choice-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.choice-btn.selected {
+  border-color: #007aff;
+  background: #e5f1ff;
+}
+
+.choice-btn.correct {
+  border-color: #34c759;
+  background: #e8f9ed;
+}
+
+.choice-btn.incorrect {
+  border-color: #ff3b30;
+  background: #ffebeb;
+}
+
+.choice-btn:disabled {
+  cursor: default;
+}
+
+.choice-verb {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1e;
+}
+
+.choice-hint {
+  font-size: 12px;
+  color: #8e8e93;
+}
+
+/* Gender Form */
+.gender-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gender-form input {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-family: inherit;
+  border: 2px solid #e5e5ea;
+  border-radius: 14px;
+  background: white;
+  outline: none;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.gender-form input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1);
+}
+
+.gender-form input.correct {
+  border-color: #34c759;
+  background: #e8f9ed;
+}
+
+.gender-form input.incorrect {
+  border-color: #ff3b30;
+  background: #ffebeb;
+}
+
+/* Check Button */
+.check-btn {
+  width: 100%;
+  padding: 16px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: inherit;
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+  background: #0066dd;
+}
+
+.check-btn:disabled {
+  background: #c7c7cc;
+  cursor: not-allowed;
+}
+
+/* Result */
+.grammar-drill .result {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.grammar-drill .result.correct {
+  background: #e8f9ed;
+}
+
+.grammar-drill .result.incorrect {
+  background: #ffebeb;
+}
+
+.grammar-drill .result-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.grammar-drill .result.correct .result-icon {
+  background: #34c759;
+  color: white;
+}
+
+.grammar-drill .result.incorrect .result-icon {
+  background: #ff3b30;
+  color: white;
+}
+
+.grammar-drill .result-content {
+  text-align: center;
+}
+
+.correct-sentence {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 8px;
+}
+
+.pronoun-type {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7c3aed;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.explanation {
+  font-size: 14px;
+  color: #636366;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.grammar-drill .continue-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: inherit;
+  background: #1c1c1e;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.grammar-drill .continue-btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}

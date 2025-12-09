@@ -1,0 +1,350 @@
+.settings-page {
+  min-height: 100vh;
+  background: #f2f2f7;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  padding-top: max(12px, env(safe-area-inset-top));
+  background: white;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.settings-header h1 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.settings-content {
+  padding: 20px;
+  padding-bottom: max(40px, env(safe-area-inset-bottom));
+}
+
+.settings-section {
+  margin-bottom: 32px;
+}
+
+.settings-section .section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e93;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 4px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1c1c1e;
+}
+
+.stat-card .stat-label {
+  font-size: 12px;
+  color: #8e8e93;
+  margin-top: 4px;
+}
+
+/* Setting Items */
+.setting-item {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.setting-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.setting-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1c1c1e;
+}
+
+.setting-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #007aff;
+}
+
+.setting-item input[type="range"] {
+  width: 100%;
+  height: 4px;
+  background: #e5e5ea;
+  border-radius: 2px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.setting-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Toggle */
+.setting-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 31px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5ea;
+  transition: 0.3s;
+  border-radius: 31px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 27px;
+  width: 27px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.toggle input:checked + .toggle-slider {
+  background-color: #34c759;
+}
+
+.toggle input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+/* Info Items */
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.info-item span:first-child {
+  font-size: 16px;
+  color: #1c1c1e;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8e8e93;
+}
+
+/* Update Button */
+.update-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  background: white;
+  color: #007aff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.update-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.update-btn:active {
+  background: #f8f8f8;
+}
+
+.install-update-btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  background: #34c759;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.install-update-btn:active {
+  opacity: 0.9;
+}
+
+/* Danger Zone */
+.settings-section.danger .section-title {
+  color: #ff3b30;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  background: white;
+  color: #ff3b30;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.reset-btn:active {
+  background: #ffebeb;
+}
+
+.confirm-reset {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.confirm-reset p {
+  font-size: 16px;
+  color: #1c1c1e;
+  margin: 0 0 16px;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn,
+.confirm-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e5ea;
+  color: #1c1c1e;
+}
+
+.confirm-btn {
+  background: #ff3b30;
+  color: white;
+}
+
+/* Footer */
+.settings-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.settings-footer p {
+  font-size: 13px;
+  color: #c7c7cc;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Voice Dropdown */
+.voice-select {
+  margin-top: 12px;
+}
+
+.voice-dropdown {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #1c1c1e;
+  background: #f2f2f7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238e8e93' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.voice-dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.3);
+}

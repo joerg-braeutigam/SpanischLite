@@ -1,0 +1,251 @@
+.home-page {
+  padding: 20px;
+  padding-top: max(20px, env(safe-area-inset-top));
+  padding-bottom: max(40px, env(safe-area-inset-bottom));
+  min-height: 100vh;
+  background: #f2f2f7;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.home-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.home-header .subtitle {
+  font-size: 14px;
+  color: #8e8e93;
+  margin: 4px 0 0;
+}
+
+/* Stats Bar */
+.stats-bar {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1e;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #8e8e93;
+  margin-top: 2px;
+}
+
+/* Daily Study CTA */
+.daily-study {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.daily-study:active {
+  transform: scale(0.98);
+}
+
+.daily-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 4px;
+}
+
+.daily-content p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.daily-action {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-icon {
+  font-size: 18px;
+  color: white;
+  margin-left: 2px;
+}
+
+/* Section */
+.module-section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e93;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 4px;
+}
+
+/* Module Grid */
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.module-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.module-card:active {
+  transform: scale(0.98);
+  background: #f8f8f8;
+}
+
+.module-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.module-card.disabled:active {
+  transform: none;
+}
+
+.module-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.module-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 4px;
+}
+
+.module-subtitle {
+  font-size: 12px;
+  color: #8e8e93;
+  margin: 0;
+}
+
+/* Drill List */
+.drill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.drill-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.drill-card:active {
+  transform: scale(0.99);
+  background: #f8f8f8;
+}
+
+.drill-icon {
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color, #007aff);
+  background: color-mix(in srgb, var(--accent-color) 15%, white);
+  border-radius: 12px;
+}
+
+.drill-content {
+  flex: 1;
+}
+
+.drill-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 2px;
+}
+
+.drill-subtitle {
+  font-size: 13px;
+  color: #8e8e93;
+  margin: 0;
+}
+
+.drill-arrow {
+  font-size: 24px;
+  color: #c7c7cc;
+  font-weight: 300;
+}
+
+/* Settings Link */
+.settings-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.settings-link:active {
+  background: #f8f8f8;
+}
+
+.settings-icon {
+  font-size: 20px;
+}
+
+.settings-link span:nth-child(2) {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1c1c1e;
+}
