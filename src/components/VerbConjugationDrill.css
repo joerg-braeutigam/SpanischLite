@@ -1,0 +1,271 @@
+.verb-drill {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.verb-drill-card {
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.verb-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.verb-infinitive {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.verb-german {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.pronoun-hint {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.pronoun {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sentence-container {
+  margin: 20px 0;
+}
+
+.sentence {
+  font-size: 1.25rem;
+  line-height: 2;
+  text-align: center;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sentence-part {
+  vertical-align: middle;
+}
+
+.verb-input {
+  display: inline-block;
+  width: 120px;
+  padding: 6px 12px;
+  font-size: 1.25rem;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background: var(--input-background);
+  color: var(--text-primary);
+  outline: none;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.verb-input:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+.verb-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.answer-display {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.answer-display.correct {
+  background: rgba(52, 199, 89, 0.15);
+  color: var(--success-color);
+}
+
+.answer-display.incorrect {
+  background: rgba(255, 59, 48, 0.15);
+  color: var(--error-color);
+  text-decoration: line-through;
+}
+
+.german-translation {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+.result-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  margin: 16px 0;
+}
+
+.result-feedback.correct {
+  background: rgba(52, 199, 89, 0.1);
+  color: var(--success-color);
+}
+
+.result-feedback.incorrect {
+  background: rgba(255, 59, 48, 0.1);
+  color: var(--error-color);
+}
+
+.result-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.result-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.correct-answer {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.conjugation-table {
+  background: var(--secondary-background);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.conjugation-table h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.conjugation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.conj-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.conj-pronoun {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  min-width: 60px;
+}
+
+.conj-form {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.action-form {
+  margin-top: 20px;
+}
+
+.submit-btn,
+.continue-btn {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.submit-btn:disabled {
+  background: var(--disabled-color);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.continue-btn {
+  background: var(--success-color);
+  color: white;
+}
+
+.continue-btn:hover {
+  background: #2eb664;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .verb-drill-card {
+    background: var(--card-background);
+  }
+
+  .conjugation-table {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .verb-drill-card {
+    padding: 16px;
+  }
+
+  .verb-infinitive {
+    font-size: 1.3rem;
+  }
+
+  .sentence {
+    font-size: 1.1rem;
+  }
+
+  .verb-input {
+    width: 100px;
+    font-size: 1.1rem;
+  }
+
+  .conjugation-grid {
+    grid-template-columns: 1fr;
+  }
+}

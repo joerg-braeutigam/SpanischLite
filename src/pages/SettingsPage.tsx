@@ -282,7 +282,7 @@ export function SettingsPage() {
         </section>
 
         <footer className="settings-footer">
-          <p>SpanischLite v1.0.0</p>
+          <p>SpanischLite v1.1.0</p>
           <p>LatAm SRS Edition</p>
         </footer>
       </div>

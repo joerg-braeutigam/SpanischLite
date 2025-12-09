@@ -7,6 +7,7 @@ import { TypingPage } from "./pages/TypingPage";
 import { SpeakingPage } from "./pages/SpeakingPage";
 import { FillBlankPage } from "./pages/FillBlankPage";
 import { GrammarDrillPage } from "./pages/GrammarDrillPage";
+import { VerbDrillPage } from "./pages/VerbDrillPage";
 import { SettingsPage } from "./pages/SettingsPage";
 import "./App.css";
 
@@ -50,6 +51,7 @@ function AppContent() {
       <Route path="/typing" element={<TypingPage />} />
       <Route path="/speaking" element={<SpeakingPage />} />
       <Route path="/fill-blank" element={<FillBlankPage />} />
+      <Route path="/verb-drill" element={<VerbDrillPage />} />
       <Route path="/drill/:type" element={<GrammarDrillPage />} />
       <Route path="/settings" element={<SettingsPage />} />
     </Routes>

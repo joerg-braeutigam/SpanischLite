@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../store/useStore";
 import { getCardStats } from "../utils/srs";
+import { UpdateBanner } from "../components/UpdateBanner";
+import { InstallPrompt } from "../components/InstallPrompt";
 import "./HomePage.css";
 
 export function HomePage() {
@@ -14,13 +16,12 @@ export function HomePage() {
 
   const modules = [
     {
-      id: "study",
-      title: "Lernen",
-      subtitle: `${totalCards} Karten heute`,
-      icon: "📚",
+      id: "verb-drill",
+      title: "Verben üben",
+      subtitle: "Konjugation trainieren",
+      icon: "🔄",
       color: "#007AFF",
-      disabled: totalCards === 0,
-      path: "/study",
+      path: "/verb-drill",
     },
     {
       id: "typing",
@@ -90,6 +91,9 @@ export function HomePage() {
         <p className="subtitle">LatAm SRS Edition</p>
       </header>
 
+      {/* Update Banner */}
+      <UpdateBanner />
+
       {/* Stats Bar */}
       <motion.div
         className="stats-bar"
@@ -142,11 +146,11 @@ export function HomePage() {
           {modules.map((module, index) => (
             <motion.div
               key={module.id}
-              className={`module-card ${module.disabled ? "disabled" : ""}`}
+              className="module-card"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 + index * 0.05 }}
-              onClick={() => !module.disabled && navigate(module.path)}
+              onClick={() => navigate(module.path)}
               style={{ "--accent-color": module.color } as React.CSSProperties}
             >
               <span className="module-icon">{module.icon}</span>
@@ -196,6 +200,9 @@ export function HomePage() {
           <span className="drill-arrow">›</span>
         </motion.div>
       </section>
+
+      {/* Install Prompt */}
+      <InstallPrompt />
     </div>
   );
 }

@@ -1,3 +1,40 @@
+/* CSS Variables */
+:root {
+  --primary-color: #007aff;
+  --primary-dark: #0056cc;
+  --success-color: #34c759;
+  --error-color: #ff3b30;
+  --warning-color: #ff9500;
+  --text-primary: #1c1c1e;
+  --text-secondary: #8e8e93;
+  --text-tertiary: #c7c7cc;
+  --background-primary: #f2f2f7;
+  --card-background: #ffffff;
+  --secondary-background: #f2f2f7;
+  --border-color: #e5e5ea;
+  --input-background: #ffffff;
+  --disabled-color: #c7c7cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #0a84ff;
+    --primary-dark: #409cff;
+    --success-color: #30d158;
+    --error-color: #ff453a;
+    --warning-color: #ff9f0a;
+    --text-primary: #ffffff;
+    --text-secondary: #98989d;
+    --text-tertiary: #636366;
+    --background-primary: #000000;
+    --card-background: #1c1c1e;
+    --secondary-background: #2c2c2e;
+    --border-color: #38383a;
+    --input-background: #2c2c2e;
+    --disabled-color: #636366;
+  }
+}
+
 /* Global Reset & Base Styles */
 *,
 *::before,
